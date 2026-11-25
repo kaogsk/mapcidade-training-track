@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Management · MapCidade Training Track</title>
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/app.css">
+<script>try{var t=localStorage.getItem("training-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="brand-mark"></span>Training Track</a>
+  <span class="page-name">Management</span>
+  <nav class="who">
+    <a href="/"><i data-icon="map"></i>Back to the track</a>
+    <a href="/api/management/export.csv"><i data-icon="book"></i>Export CSV</a>
+    <button id="logout" class="ghost" aria-label="Sign out"><i data-icon="logout"></i></button>
+  </nav>
+</header>
+<main class="mgmt">
+  <div id="kpis" class="cards"></div>
+  <section class="panel">
+    <header><h3>Analysts</h3><input id="search" type="search" placeholder="Filter by name or username"></header>
+    <div class="table-wrap"><table id="analysts"></table></div>
+    <small class="hint">Click a column to sort, a row for details.</small>
+  </section>
+  <section id="detail" class="panel detail" hidden></section>
+  <div class="grid2">
+    <section class="panel">
+      <header><h3>Questions that trip people up</h3><small>first-try error rate</small></header>
+      <div id="questions"></div>
+    </section>
+    <section class="panel">
+      <header><h3>Managers</h3></header>
+      <ul id="managers" class="managers"></ul>
+      <form id="addManager" class="inline"><input id="newManager" placeholder="network username" required><button>Add</button></form>
+      <header><h3>Recent sign-ins</h3></header>
+      <ul id="access" class="access"></ul>
+    </section>
+  </div>
+</main>
+<script type="module" src="/assets/web/management.js"></script>
+</body>
+</html>

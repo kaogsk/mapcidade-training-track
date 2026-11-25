@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in · MapCidade Training Track</title>
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/app.css">
+<script>try{var t=localStorage.getItem("training-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="login-page">
+<main class="login-card">
+  <h1><span class="brand-mark"></span>Training Track</h1>
+  <p class="sub">Sign in with your network account.</p>
+  <form id="loginForm" autocomplete="on">
+    <label>Username <input name="username" autocomplete="username" required autofocus placeholder="first.last"></label>
+    <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+    <button type="submit">Sign in</button>
+    <p id="loginMsg" class="msg" role="status"></p>
+  </form>
+  <p class="hint">Demo directory: <code>ana.rivers</code> or <code>morgan.hale</code> (manager), password <code>demo-password</code>.</p>
+</main>
+<script type="module" src="/assets/web/login.js"></script>
+</body>
+</html>

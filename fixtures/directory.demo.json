@@ -1,0 +1,90 @@
+{
+  "entries": [
+    {
+      "dn": "cn=svc-training,ou=Services,dc=mapcidade,dc=example",
+      "objectClass": [
+        "account"
+      ],
+      "cn": "svc-training",
+      "passwordHash": "scrypt$sXU32cdZI8+BYhuuDdJFdw==$adAXHLazojDVeeUDE1oA9xfu3wsDLkjtDNjn89gb0hk="
+    },
+    {
+      "dn": "cn=Ana Rivers,ou=People,dc=mapcidade,dc=example",
+      "objectClass": [
+        "top",
+        "person",
+        "user"
+      ],
+      "cn": "Ana Rivers",
+      "sAMAccountName": "ana.rivers",
+      "userPrincipalName": "ana.rivers@mapcidade.example",
+      "displayName": "Ana Rivers",
+      "passwordHash": "scrypt$vkke3GCMCVcXybnmE9b/ZA==$GhmU1lt5bzN3Xn3bZGtn+OyEi+D2rQ2w6n/OrVem1tA="
+    },
+    {
+      "dn": "cn=Bruno Lake,ou=People,dc=mapcidade,dc=example",
+      "objectClass": [
+        "top",
+        "person",
+        "user"
+      ],
+      "cn": "Bruno Lake",
+      "sAMAccountName": "bruno.lake",
+      "userPrincipalName": "bruno.lake@mapcidade.example",
+      "displayName": "Bruno Lake",
+      "passwordHash": "scrypt$AGejWuDvART+QetVZL/OVw==$8vMTa/RSHaTYZk+t9KE/kEbCTpzCjkxaqwTx6LNQMOg="
+    },
+    {
+      "dn": "cn=Carla Oak,ou=People,dc=mapcidade,dc=example",
+      "objectClass": [
+        "top",
+        "person",
+        "user"
+      ],
+      "cn": "Carla Oak",
+      "sAMAccountName": "carla.oak",
+      "userPrincipalName": "carla.oak@mapcidade.example",
+      "displayName": "Carla Oak",
+      "passwordHash": "scrypt$V8k8oz4KW9mygvEEehmbjw==$TYuLWX0nrR0HITOcKoEBAhDuTOCHoFqCSGVLXtb47kI="
+    },
+    {
+      "dn": "cn=Diego Marsh,ou=People,dc=mapcidade,dc=example",
+      "objectClass": [
+        "top",
+        "person",
+        "user"
+      ],
+      "cn": "Diego Marsh",
+      "sAMAccountName": "diego.marsh",
+      "userPrincipalName": "diego.marsh@mapcidade.example",
+      "displayName": "Diego Marsh",
+      "passwordHash": "scrypt$0qIIDv5tS5T3UT5moQlqew==$FMEncRVS1/MfbEmuYqJZiTqVwDH1+4VeFlSRomIhMB8="
+    },
+    {
+      "dn": "cn=Elena Brook,ou=People,dc=mapcidade,dc=example",
+      "objectClass": [
+        "top",
+        "person",
+        "user"
+      ],
+      "cn": "Elena Brook",
+      "sAMAccountName": "elena.brook",
+      "userPrincipalName": "elena.brook@mapcidade.example",
+      "displayName": "Elena Brook",
+      "passwordHash": "scrypt$XWZ05iHXCu9e/q4/zYF2Zw==$jMdQsyhQen4MKYNAW5jzQbED0q/0TVx9CdmBjTFzKp8="
+    },
+    {
+      "dn": "cn=Morgan Hale,ou=People,dc=mapcidade,dc=example",
+      "objectClass": [
+        "top",
+        "person",
+        "user"
+      ],
+      "cn": "Morgan Hale",
+      "sAMAccountName": "morgan.hale",
+      "userPrincipalName": "morgan.hale@mapcidade.example",
+      "displayName": "Morgan Hale",
+      "passwordHash": "scrypt$Qm7mCmMc/nydO/0as+HITA==$d042xwaATsyjmqte/1M0zWbnmw4KxsTjMQJslHhvHf0="
+    }
+  ]
+}

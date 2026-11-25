@@ -1,0 +1,9 @@
+node_modules/
+dist/
+public/assets/web/
+public/assets/shared/
+data/
+.env
+*.db
+*.db-journal
+*.tmp

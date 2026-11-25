@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MapCidade Training Track</title>
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/app.css">
+<script>try{var t=localStorage.getItem("training-theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/"><span class="brand-mark"></span>Training Track</a>
+  <div class="stats">
+    <span class="stat" title="Experience points"><i data-icon="bolt"></i><b id="hXp">0</b> XP</span>
+    <span class="stat" title="Level"><i data-icon="star"></i>Lv <b id="hLevel">1</b></span>
+    <span class="stat" title="Streak: first-try answers in a row. A first-try mistake resets it."><i data-icon="flame"></i><b id="hStreak">0</b></span>
+    <span class="stat" title="Badges"><i data-icon="trophy"></i><b id="hBadges">0</b></span>
+  </div>
+  <nav class="who">
+    <a id="managementLink" href="/management" hidden><i data-icon="chart"></i>Management</a>
+    <span id="userName" class="user"></span>
+    <button id="theme" class="ghost" aria-label="Toggle theme"></button>
+    <button id="logout" class="ghost" aria-label="Sign out"><i data-icon="logout"></i></button>
+  </nav>
+</header>
+
+<main class="layout">
+  <section class="col-main">
+    <div class="cards">
+      <div class="card"><small>Lessons</small><strong id="kLessons">0/0</strong></div>
+      <div class="card"><small>This track</small><strong id="kTrack">0%</strong><span class="bar"><i id="kTrackBar"></i></span></div>
+      <div class="card"><small>First-try accuracy</small><strong id="kAcc">-</strong></div>
+      <div class="card"><small>Next level in</small><strong id="kNext">150 XP</strong><span class="bar"><i id="kLevelBar"></i></span></div>
+    </div>
+    <div id="tabs" class="tabs" role="tablist"></div>
+    <h2 id="trackTitle" class="track-title"></h2>
+    <div id="trail"><p class="loading">Loading the track…</p></div>
+  </section>
+
+  <aside class="col-side">
+    <section class="panel">
+      <header><h3>Skills</h3><small id="overall"></small></header>
+      <div id="skills"></div>
+    </section>
+    <section class="panel">
+      <header><h3>Badges</h3><small>best streak <b id="kStreakBest">0</b></small></header>
+      <ul id="badges" class="badges"></ul>
+    </section>
+    <section class="panel">
+      <button id="lockSwitch" class="switch" role="switch" aria-checked="false"><span class="knob"></span><span id="lockText"></span></button>
+      <button id="reset" class="ghost danger">Start over</button>
+    </section>
+  </aside>
+</main>
+
+<div id="overlay" class="overlay" role="dialog" aria-modal="true">
+  <div class="lesson">
+    <header><span class="bar"><i id="lessonBar"></i></span><span id="lessonStep"></span><button id="lessonClose" class="ghost" aria-label="Close"></button></header>
+    <div id="lessonBody" class="lesson-body"></div>
+    <footer><span id="lessonInfo"></span><button id="lessonNext">Continue</button></footer>
+  </div>
+</div>
+<div id="lightbox" class="lightbox"><img alt=""></div>
+<div id="toast" class="toast" role="status"></div>
+<script type="module" src="/assets/web/app.js"></script>
+</body>
+</html>

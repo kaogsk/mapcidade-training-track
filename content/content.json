@@ -1,0 +1,648 @@
+{
+  "schema": 1,
+  "tracks": [
+    {
+      "key": "Viewer",
+      "name": "Map Viewer",
+      "icon": "map",
+      "chapters": [
+        {
+          "num": "1",
+          "title": "Getting around",
+          "lessons": [
+            {
+              "id": "Viewer-1-1",
+              "num": "1.1",
+              "title": "The workspace at a glance",
+              "xp": 20,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Three areas",
+                  "html": "<p>The screen has three areas: the <strong>toolbar</strong> along the top, the <strong>layer panel</strong> on the left and the <strong>map</strong> in the centre. Almost every support call starts by asking the user which of the three they are looking at.</p>",
+                  "figures": [
+                    "Viewer_1"
+                  ]
+                },
+                {
+                  "title": "Who sees what",
+                  "html": "<p>The layers listed in the panel depend on the groups the user belongs to. Two people on the same screen can see different layer lists, and that is expected.</p>",
+                  "figures": []
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "A user says a layer is missing from the panel, but a colleague can see it. What is the most likely cause?",
+                  "cloze": null,
+                  "options": [
+                    "The browser cache",
+                    "The two users are in different groups",
+                    "The layer was deleted",
+                    "The map is zoomed out"
+                  ],
+                  "answer": 1,
+                  "explanation": "The layer list is filtered by group permissions.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Viewer-1-2",
+              "num": "1.2",
+              "title": "Pan, zoom and extents",
+              "xp": 20,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Moving around",
+                  "html": "<p>Drag to pan, scroll to zoom. The <em>zoom to extent</em> button brings the whole city back into view, which is the quickest way out when a user is lost over an empty area.</p>",
+                  "figures": [
+                    "Viewer_2"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "Complete the sentence.",
+                  "cloze": "When the user is lost over an empty area, use _____ to bring the city back.",
+                  "options": [
+                    "zoom to extent",
+                    "the print tool",
+                    "the audit log"
+                  ],
+                  "answer": 0,
+                  "explanation": "When the user is lost over an empty area, use zoom to extent to bring the city back.",
+                  "image": null
+                },
+                {
+                  "prompt": "Which action pans the map?",
+                  "cloze": null,
+                  "options": [
+                    "Scrolling",
+                    "Dragging",
+                    "Double right-click"
+                  ],
+                  "answer": 1,
+                  "explanation": "Dragging pans; scrolling zooms.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Viewer-1-3",
+              "num": "1.3",
+              "title": "Finding an address",
+              "xp": 25,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Search box",
+                  "html": "<p>The search box accepts a street address or a parcel code. Results are pinned on the map; clicking the pin opens the parcel.</p><ul><li>Start with the street name, then the number.</li><li>Parcel codes are searched exactly.</li></ul>",
+                  "figures": [
+                    "Viewer_3"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "Which toolbar button is highlighted in this screenshot?",
+                  "cloze": null,
+                  "options": [
+                    "Search",
+                    "Measure",
+                    "Edit",
+                    "Print"
+                  ],
+                  "answer": 0,
+                  "explanation": "The first button opens the search box.",
+                  "image": "Viewer_3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Reading the map",
+          "lessons": [
+            {
+              "id": "Viewer-2-1",
+              "num": "2.1",
+              "title": "Turning layers on and off",
+              "xp": 20,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Visibility",
+                  "html": "<p>Tick a layer in the panel to draw it. Some layers only draw below a certain scale: if a ticked layer does not appear, ask the user to zoom in before opening a ticket.</p>",
+                  "figures": [
+                    "Viewer_4"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "A ticked layer does not draw. What do you ask first?",
+                  "cloze": null,
+                  "options": [
+                    "To reinstall the browser",
+                    "To zoom in",
+                    "To log out"
+                  ],
+                  "answer": 1,
+                  "explanation": "Many layers have a minimum scale and only draw when zoomed in.",
+                  "image": null
+                },
+                {
+                  "prompt": "Complete the sentence.",
+                  "cloze": "Layers that only draw below a certain _____ look missing when zoomed out.",
+                  "options": [
+                    "scale",
+                    "colour",
+                    "group"
+                  ],
+                  "answer": 0,
+                  "explanation": "Layers that only draw below a certain scale look missing when zoomed out.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Viewer-2-2",
+              "num": "2.2",
+              "title": "Identify and measure",
+              "xp": 25,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Identify",
+                  "html": "<p>Clicking a feature with the identify tool lists its attributes. If nothing is listed, the click probably hit an area with no feature.</p>",
+                  "figures": []
+                },
+                {
+                  "title": "Measure",
+                  "html": "<p>The measure tool draws a line or an area and shows the length in metres. Double-click to finish.</p>",
+                  "figures": [
+                    "Viewer_5"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "How does the user finish a measurement?",
+                  "cloze": null,
+                  "options": [
+                    "Pressing Esc",
+                    "Double-clicking",
+                    "Closing the panel"
+                  ],
+                  "answer": 1,
+                  "explanation": "A double-click closes the line or area.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Viewer-2-3",
+              "num": null,
+              "title": "Chapter review",
+              "xp": 40,
+              "boss": true,
+              "blocks": [],
+              "questions": [
+                {
+                  "prompt": "Where is the list of layers?",
+                  "cloze": null,
+                  "options": [
+                    "Toolbar",
+                    "Left panel",
+                    "Map footer"
+                  ],
+                  "answer": 1,
+                  "explanation": "Layers live in the left panel.",
+                  "image": null
+                },
+                {
+                  "prompt": "What does zoom to extent do?",
+                  "cloze": null,
+                  "options": [
+                    "Shows the whole city",
+                    "Prints the map",
+                    "Opens the search"
+                  ],
+                  "answer": 0,
+                  "explanation": "It zooms back to the full city extent.",
+                  "image": null
+                },
+                {
+                  "prompt": "The identify tool shows nothing after a click. Most likely?",
+                  "cloze": null,
+                  "options": [
+                    "Server down",
+                    "The click missed every feature",
+                    "Wrong password"
+                  ],
+                  "answer": 1,
+                  "explanation": "An empty identify result usually means the click hit no feature.",
+                  "image": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "Edit",
+      "name": "Layer Editing",
+      "icon": "pen",
+      "chapters": [
+        {
+          "num": "3",
+          "title": "Edit sessions",
+          "lessons": [
+            {
+              "id": "Edit-3-1",
+              "num": "3.1",
+              "title": "Starting an edit session",
+              "xp": 20,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "The pencil",
+                  "html": "<p>Select a layer in the panel and press the pencil. The button stays grey when the user's group can view the layer but not edit it.</p>",
+                  "figures": [
+                    "Edit_1"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "The pencil is grey for one layer only. Why?",
+                  "cloze": null,
+                  "options": [
+                    "The layer is view-only for the user's group",
+                    "The browser is outdated",
+                    "The map is too far out"
+                  ],
+                  "answer": 0,
+                  "explanation": "Edit rights are granted per layer and per group.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Edit-3-2",
+              "num": "3.2",
+              "title": "Drawing a new parcel",
+              "xp": 30,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Vertex by vertex",
+                  "html": "<p>Click to add each vertex and double-click to close the polygon. The attribute form opens as soon as the polygon is closed.</p>",
+                  "figures": [
+                    "Edit_2"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "When does the attribute form open?",
+                  "cloze": null,
+                  "options": [
+                    "Before the first vertex",
+                    "After the polygon is closed",
+                    "Only after saving"
+                  ],
+                  "answer": 1,
+                  "explanation": "Closing the polygon opens the form.",
+                  "image": null
+                },
+                {
+                  "prompt": "Complete the sentence.",
+                  "cloze": "A double-click _____ the polygon.",
+                  "options": [
+                    "deletes",
+                    "closes",
+                    "moves"
+                  ],
+                  "answer": 1,
+                  "explanation": "A double-click closes the polygon.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Edit-3-3",
+              "num": "3.3",
+              "title": "Snapping",
+              "xp": 25,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Why snap",
+                  "html": "<p>With snapping on, a new vertex jumps to the nearest existing vertex. Neighbouring parcels then share the border exactly, with no gaps or slivers.</p>",
+                  "figures": []
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "What problem does snapping prevent?",
+                  "cloze": null,
+                  "options": [
+                    "Slow drawing",
+                    "Gaps and slivers between neighbours",
+                    "Wrong colours"
+                  ],
+                  "answer": 1,
+                  "explanation": "Shared borders stay exact.",
+                  "image": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Attributes and saving",
+          "lessons": [
+            {
+              "id": "Edit-4-1",
+              "num": "4.1",
+              "title": "The attribute form",
+              "xp": 25,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Required fields",
+                  "html": "<p>Fields marked with an asterisk are required; the form will not save while one is empty. Drop-down fields only accept values from their list.</p>",
+                  "figures": [
+                    "Edit_3"
+                  ]
+                },
+                {
+                  "title": "Undo",
+                  "html": "<p>While drawing, the undo button removes the last vertex, not the whole feature.</p><p><img src=\"img/inline-8e3361bfc1f2.svg\" alt=\"Undo button\"></p>",
+                  "figures": []
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "The Save button does nothing. What do you check first?",
+                  "cloze": null,
+                  "options": [
+                    "An empty required field",
+                    "The screen resolution",
+                    "The layer colour"
+                  ],
+                  "answer": 0,
+                  "explanation": "An empty required field blocks saving.",
+                  "image": null
+                },
+                {
+                  "prompt": "What does undo remove while drawing?",
+                  "cloze": null,
+                  "options": [
+                    "The whole feature",
+                    "The last vertex",
+                    "Every edit of the session"
+                  ],
+                  "answer": 1,
+                  "explanation": "Undo steps back one vertex.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Edit-4-2",
+              "num": "4.2",
+              "title": "Saving and discarding",
+              "xp": 25,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Commit",
+                  "html": "<p>Edits stay local until <strong>Save</strong> is pressed. Closing the session without saving discards them, and the platform asks for confirmation first.</p>",
+                  "figures": []
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "A user lost an afternoon of edits. What most likely happened?",
+                  "cloze": null,
+                  "options": [
+                    "The session was closed without saving",
+                    "The layer was renamed",
+                    "The browser zoomed out"
+                  ],
+                  "answer": 0,
+                  "explanation": "Edits are only stored when Save is pressed.",
+                  "image": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "Admin",
+      "name": "Administration",
+      "icon": "shield",
+      "chapters": [
+        {
+          "num": "5",
+          "title": "People and access",
+          "lessons": [
+            {
+              "id": "Admin-5-1",
+              "num": "5.1",
+              "title": "Users and groups",
+              "xp": 20,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Groups, not people",
+                  "html": "<p>Permissions are granted to groups; users inherit them by membership. To give someone access, add them to the right group instead of granting rights one by one.</p>",
+                  "figures": []
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "How should access be granted to a new analyst?",
+                  "cloze": null,
+                  "options": [
+                    "Layer by layer to the user",
+                    "By adding the user to a group",
+                    "By sharing a colleague's login"
+                  ],
+                  "answer": 1,
+                  "explanation": "Groups keep permissions consistent and auditable.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Admin-5-2",
+              "num": "5.2",
+              "title": "Layer permissions",
+              "xp": 30,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "View and edit",
+                  "html": "<p>Each group gets <em>view</em> and/or <em>edit</em> per layer. Edit without view is not allowed: the screen grants view automatically.</p>",
+                  "figures": [
+                    "Admin_1"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "Can a group edit a layer it cannot view?",
+                  "cloze": null,
+                  "options": [
+                    "Yes",
+                    "No, edit implies view"
+                  ],
+                  "answer": 1,
+                  "explanation": "Edit always comes with view.",
+                  "image": null
+                },
+                {
+                  "prompt": "Complete the sentence.",
+                  "cloze": "Permissions are granted per layer and per _____.",
+                  "options": [
+                    "user",
+                    "group",
+                    "browser"
+                  ],
+                  "answer": 1,
+                  "explanation": "Permissions are granted per layer and per group.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Admin-5-3",
+              "num": "5.3",
+              "title": "Reading the audit log",
+              "xp": 25,
+              "boss": false,
+              "blocks": [
+                {
+                  "title": "Who changed what",
+                  "html": "<p>The audit log records every insert, update and delete with the user and the time. Filter by layer first; then by user or by date.</p>",
+                  "figures": [
+                    "Admin_2"
+                  ]
+                }
+              ],
+              "questions": [
+                {
+                  "prompt": "What is the best first filter when investigating a changed parcel?",
+                  "cloze": null,
+                  "options": [
+                    "The layer",
+                    "The browser",
+                    "The screen size"
+                  ],
+                  "answer": 0,
+                  "explanation": "Filtering by layer narrows the log the fastest.",
+                  "image": null
+                }
+              ]
+            },
+            {
+              "id": "Admin-5-4",
+              "num": null,
+              "title": "Chapter review",
+              "xp": 40,
+              "boss": true,
+              "blocks": [],
+              "questions": [
+                {
+                  "prompt": "Where do users get their permissions from?",
+                  "cloze": null,
+                  "options": [
+                    "Their groups",
+                    "Their browser",
+                    "The map scale"
+                  ],
+                  "answer": 0,
+                  "explanation": "Permissions are inherited from groups.",
+                  "image": null
+                },
+                {
+                  "prompt": "What does the audit log record?",
+                  "cloze": null,
+                  "options": [
+                    "Only logins",
+                    "Inserts, updates and deletes",
+                    "Only deletes"
+                  ],
+                  "answer": 1,
+                  "explanation": "Every data change is logged.",
+                  "image": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "figures": {
+    "Admin_1": {
+      "file": "Admin_1.svg",
+      "num": "5.1",
+      "caption": "Group permissions per layer"
+    },
+    "Admin_2": {
+      "file": "Admin_2.svg",
+      "num": "5.2",
+      "caption": "The audit log filtered by layer"
+    },
+    "Edit_1": {
+      "file": "Edit_1.svg",
+      "num": "3.1",
+      "caption": "The pencil button opens an edit session for the selected layer"
+    },
+    "Edit_2": {
+      "file": "Edit_2.svg",
+      "num": "3.2",
+      "caption": "A new parcel being drawn vertex by vertex"
+    },
+    "Edit_3": {
+      "file": "Edit_3.svg",
+      "num": "4.1",
+      "caption": "Attribute form shown after the geometry is closed"
+    },
+    "Viewer_1": {
+      "file": "Viewer_1.svg",
+      "num": "1.1",
+      "caption": "The workspace: toolbar on top, layer panel on the left, map in the centre"
+    },
+    "Viewer_2": {
+      "file": "Viewer_2.svg",
+      "num": "1.2",
+      "caption": "The zoom-to-extent button"
+    },
+    "Viewer_3": {
+      "file": "Viewer_3.svg",
+      "num": "1.3",
+      "caption": "Address search with the result pinned on the map"
+    },
+    "Viewer_4": {
+      "file": "Viewer_4.svg",
+      "num": "2.1",
+      "caption": "Layer panel with the Zoning layer switched off"
+    },
+    "Viewer_5": {
+      "file": "Viewer_5.svg",
+      "num": "2.2",
+      "caption": "Measuring a distance along a street"
+    }
+  }
+}

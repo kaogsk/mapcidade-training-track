@@ -1,0 +1,36 @@
+{
+  "name": "mapcidade-training-track",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gamified training track for support analysts (lessons, challenges, XP, levels, badges) with directory login, per-user progress in SQLite, a manager dashboard, and an extractor that turns a monolithic legacy HTML bundle into structured content.",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "tsc -p tsconfig.web.json && tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.web.json",
+    "start": "node dist/src/index.js",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.check.json",
+    "legacy:build": "tsx scripts/build-legacy.ts",
+    "extract": "tsx scripts/extract.ts",
+    "directory:user": "tsx scripts/directory-user.ts",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.39.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.9.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^3.2.0"
+  }
+}
